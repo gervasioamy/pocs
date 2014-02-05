@@ -4,7 +4,7 @@ import com.globant.mongodb.model.User;
 
 public interface UserDAO {
 
-	// save
+	// save user
 	public abstract void createUser(String username, String pwd);
 
 	// find by username
