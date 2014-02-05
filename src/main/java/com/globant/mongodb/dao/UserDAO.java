@@ -2,6 +2,11 @@ package com.globant.mongodb.dao;
 
 import com.globant.mongodb.model.User;
 
+/**
+ * User DAO
+ * 
+ * @author gervasio.amy
+ */
 public interface UserDAO {
 
 	// save
