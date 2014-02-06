@@ -37,6 +37,5 @@ public class MongoUserDAOTest {
 		dao.deleteUser("gamy1");
 		dao.deleteUser("gamy2");
 	}
-	
-	
+		
 }
