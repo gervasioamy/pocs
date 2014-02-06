@@ -24,9 +24,19 @@ public class MongoUserDAOTest {
 		Assert.assertEquals("gamy1", user.getUsername());
 	}
 	
+	@Test
+	public void testCreateUserWithAddress() {
+		dao.createUser("gamy2", "pwd123", "Fake St 123", "99000", "Springfield", "Who Knows");
+		User user = dao.findUser("gamy2");
+		Assert.assertNotNull(user.getAddress());
+		Assert.assertEquals("gamy2", user.getUsername());
+	}
 	
 	@Test
 	public void testDeleteUser() {
 		dao.deleteUser("gamy1");
+		dao.deleteUser("gamy2");
 	}
+	
+	
 }

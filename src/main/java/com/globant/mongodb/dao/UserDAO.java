@@ -12,6 +12,8 @@ public interface UserDAO {
 	// save user
 	public abstract void createUser(String username, String pwd);
 
+	public abstract void createUser(String username, String pwd, String address, String zip, String city, String state);
+
 	// find by username
 	public abstract User findUser(String username);
 
