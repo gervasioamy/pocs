@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 
+import com.globant.mongodb.model.Address;
 import com.globant.mongodb.model.User;
 
 public class MongoUserDAO implements UserDAO {
@@ -56,6 +57,14 @@ public class MongoUserDAO implements UserDAO {
 
 	public void setMongoOperations(MongoOperations mongoOperations) {
 		this.mongoOperations = mongoOperations;
+	}
+
+	@Override
+	public void createUser(String username, String pwd, String address, String zip, String city, String state) {
+		User user = new User(username, pwd);
+		Address address2 = new Address(address, zip, city, state);
+		user.setAddress(address2);
+		mongoOperations.save(user);
 	}
 	
 	
