@@ -1,5 +1,10 @@
 package com.globant.mongodb.model;
 
+/**
+ * Address info
+ * 
+ * @author gervasio.amy
+ */
 public class Address {
 	
 	private String address;
