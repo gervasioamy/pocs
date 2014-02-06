@@ -6,15 +6,23 @@ package com.globant.mongodb.model;
  * @author gervasio.amy
  */
 public class Address {
-	
+
 	private String address;
-	
+
 	private String zip;
-	
+
 	private String city;
-	
+
 	private String state;
-	
+
+	/**
+	 * Creates a new Address instance with all attributes. Nulls are allowed
+	 * 
+	 * @param address
+	 * @param zip
+	 * @param city
+	 * @param state
+	 */
 	public Address(String address, String zip, String city, String state) {
 		super();
 		this.address = address;
@@ -54,5 +62,5 @@ public class Address {
 	public void setState(String state) {
 		this.state = state;
 	}
-	
+
 }
