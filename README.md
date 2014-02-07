@@ -1,4 +1,4 @@
-pocs
+PoCs
 ====
 
-Poofs of Contents
+Poof of Contents
