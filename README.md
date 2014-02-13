@@ -1,7 +1,2 @@
-PoCs - esta linea tiene conflicto
+PoCs
 ====
-
-Poof of Contents arreglado
-
-
-A ver con git gui??
